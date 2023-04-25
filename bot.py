@@ -223,7 +223,7 @@ async def process_hobbies(message: types.Message, state: FSMContext):
                 md.text('Пол: ', md.bold(gender)),
                 md.text('Номер телефона: ', md.bold(phone_number)),
                 md.text('Город: ', md.bold(city)),
-                md.text('Город: ', md.bold(data['hobby'][1])),
+                md.text('Хобби: ', md.bold(data['hobby'][1])),
                 sep= '\n',
             ),  
             parse_mode = ParseMode.MARKDOWN, reply_markup = types.ReplyKeyboardRemove()
